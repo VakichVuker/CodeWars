@@ -1,11 +1,11 @@
 # CodeWars
 My solutions from codewars.com on 8th kyu.
 
-## Is my friend cheating?
+## 1. Is my friend cheating?
 Files:
 * cheating.py
 
-## DESCRIPTION:
+### DESCRIPTION:
 
 * A friend of mine takes the sequence of all numbers from 1 to n (where n > 0).
 * Within that sequence, he chooses two numbers, a and b.
@@ -20,7 +20,7 @@ with all (a, b) which are the possible removed numbers in the sequence 1 to n.
 
 It happens that there are several possible (a, b). The function returns an empty array (or an empty string) if no possible numbers are found which will prove that my friend has not told the truth! (Go: in this case return nil).
 
-Examples:
+### Examples:
 removNb(26) should return [(15, 21), (21, 15)]
 or
 removNb(26) should return { {15, 21}, {21, 15} }
@@ -37,3 +37,20 @@ removNb(26) should return  {{15, 21}{21, 15}} tested by way of strings.
 Function removNb should return a pointer to an allocated array of Pair pointers, each one also allocated. 
 Note
 See examples of returns for each language in "RUN SAMPLE TESTS"
+
+## 2. Valid Parentheses
+Files:
+* valid_parenth
+
+Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
+
+### Examples
+"()"              =>  true
+")(()))"          =>  false
+"("               =>  false
+"(())((()())())"  =>  true
+
+### Constraints
+0 <= input.length <= 100
+
+Along with opening (() and closing ()) parenthesis, input may contain any valid ASCII characters. Furthermore, the input string may be empty and/or not contain any parentheses at all. Do not treat other forms of brackets as parentheses (e.g. [], {}, <>).
