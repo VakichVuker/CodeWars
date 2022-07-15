@@ -1,7 +1,7 @@
 # CodeWars
 My solutions from codewars.com on 8th kyu.
 
-# Sum without highest and lowest number
+# 1. Sum without highest and lowest number
 Task file:
 * high_and_low.py
 
@@ -16,3 +16,14 @@ Mind the input validation.
 
 ### Input validation
 If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
+
+# 2. Find the position!
+Task file:
+* find_pos_alph.py
+
+### Task
+When provided with a letter, return its position in the alphabet.
+
+Input :: "a"
+
+Ouput :: "Position of alphabet: 1"
