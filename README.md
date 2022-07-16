@@ -1,5 +1,5 @@
 # CodeWars
-My solutions from codewars.com on 8th kyu.
+My solutions from codewars.com on 5th kyu.
 
 ## 1. Is my friend cheating?
 Files:
@@ -45,12 +45,38 @@ Files:
 Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
 
 ### Examples
-"()"              =>  true
-")(()))"          =>  false
-"("               =>  false
-"(())((()())())"  =>  true
+"()"               =>  true
+")(()))"           =>  false
+"("                =>  false
+"(())((()())())"   =>  true
 
 ### Constraints
 0 <= input.length <= 100
 
 Along with opening (() and closing ()) parenthesis, input may contain any valid ASCII characters. Furthermore, the input string may be empty and/or not contain any parentheses at all. Do not treat other forms of brackets as parentheses (e.g. [], {}, <>).
+
+## 3. int32 to IPv4
+Files:
+* int32_to_ipv4.py
+
+### DESCRIPTION:
+Take the following IPv4 address: 128.32.10.1
+
+This address has 4 octets where each octet is a single byte (or 8 bits).
+
+1st octet 128 has the binary representation: 10000000
+2nd octet 32 has the binary representation: 00100000
+3rd octet 10 has the binary representation: 00001010
+4th octet 1 has the binary representation: 00000001
+So 128.32.10.1 == 10000000.00100000.00001010.00000001
+
+Because the above IP address has 32 bits, we can represent it as the unsigned 32 bit number: 2149583361
+
+Complete the function that takes an unsigned 32 bit number and returns a string representation of its IPv4 address.
+
+### Examples
+2149583361 ==> "128.32.10.1"
+
+32         ==> "0.0.0.32"
+
+0          ==> "0.0.0.0"

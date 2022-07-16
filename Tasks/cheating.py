@@ -1,4 +1,4 @@
-def remov_nb(n):
+def remov_nb(n): # function
     all_variants = [x for x in range(1, n + 1)]
     sum_all = sum(all_variants)
     poss_pairs = []
