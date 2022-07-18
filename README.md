@@ -139,3 +139,28 @@ dance_floor more visually:
 (0,5), (0,6), (1,6), (1,7), (1,8), (2,6), (2,7), (2,8) is a moshpit (looks more a wall of death in this case, haha). In this example, there are other places where you can stand in peace, so you don't even consider these, even though (0,5) has the best score in the entire club.  
 (2,1) gets score of (3-2) * 0.8 = 0.8. There's nodoby in front of you, but you would stand even further away from the stage and carry a beer risk.  
 (2,2) gets score of (3-2) * 0.99^10 * 0.8 = 0.7235. Same distance and risk, plus there's a person in front.  
+
+## 5. Incomplete Virus
+Files:
+* incomplete_virus.py
+
+### Task
+John is a hacker. He succeeded in invading a server.
+
+His next job is to write n numbers(1...n) in the memory of the server. He did this by using a virus code he wrote.
+
+Unfortunately, since the server only accepts binary digits, and his virus code doesn't take into account the problem, only a fraction of the numbers are written into memory.
+
+Given a number n, your task is to calculate how many numbers are written into memory.
+
+Note, n may be very huge, so, it will be given by a string.
+
+### Example
+> For n = "10", the output should be 2.
+>> 2 number "1" and "10" are written into memory.
+
+> For n = "20", the output should be 3.
+>> 3 number "1", "10" and "11" are written into memory.
+
+>For n = "100", the output should be 4.
+>>4 number "1", "10", "11" and "100" are written into memory.
