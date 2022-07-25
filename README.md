@@ -1,5 +1,21 @@
 # CodeWars
-My solutions from codewars.com
+My solutions from codewars.com on 6th kyu.
 
-* Each solution is in separate branch
-* The full text of the task is written in readme.md file in the corresponding branch
+## 1. What's your running pace?
+Files:  
+running_pace.py
+
+### Description
+In this Kata, we will calculate running pace. To do that, we have to know the distance and the time.
+
+Create the following function:
+
+running_pace(distance, time)
+
+Where: distance - A float with the number of kilometres
+
+time - A string containing the time it took to travel the distance. It will always be minutes:seconds. For example "25:00" means 25 minutes. You don't have to deal with hours.
+
+The function should return the pace, for example "4:20" means it took 4 minutes and 20 seconds to travel one kilometre.
+
+>Note: The pace should always return only the number of minutes and seconds. You don't have to convert these into hours. Floor the number of seconds.
